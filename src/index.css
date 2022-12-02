@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace,sans-serif;
+    
+}
+.App{
+    background-color:black;
+}
+header {
+    background-image: linear-gradient(to right, purple, blue);
+    box-shadow: 0 3px 6px rgba(0, 0,0,0.2);
+    padding: 15px;
+
+}
+
+header input{
+    display: inline-block;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    background:none;
+    outline: none;
+    border: none;
+    appearance: none;
+}
+
+header:before{
+    display: inline-block;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    content: '/r/';
+}
+
+.articles article{
+    padding: 30px 15px;
+    border: 1px solid white;
+}
+.articles article a {
+    text-decoration: none;
+}
+
+.articles article h3{
+    color: white;
+} 
+.articles article:nth-child(2n){
+    background-color: black;
+}
+.articles article:hover{
+    background-image: linear-gradient(to left, purple, blue);
+    
+}
+.articles{
+    width: 500px;
+    border: 15px dashed purple;
+    margin:auto;
+    
+}
