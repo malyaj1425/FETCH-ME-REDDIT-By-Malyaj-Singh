@@ -22,14 +22,17 @@ function App() {
     })
   },[subreddit]);
   return (
+    
     <div className="App">
+      <title>FetchMeReddit</title>
       <section class="wrapper">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
       </section>
+      <h1 id="headingname">ENTER SUBREDDIT NAME: </h1>
       <header className="App-header">
-        <input type="text" className="input" value={subreddit} onChange={e => setSubreddit(e.target.value)}/>
+        <input type="text" pattern="[A-Za-z0-9]{3,30}" className="input" value={subreddit} onChange={e => setSubreddit(e.target.value)}/>
       </header>
       <div className="articles">
       {(articles != null) ? articles.map((article,index)=><Article key={index} article={article.data} />) : ''}
