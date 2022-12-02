@@ -3,16 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: monospace,sans-serif;
-    
+    background-color: black;
 }
 .App{
-    background-color:black;
+    
 }
 header {
     background-image: linear-gradient(to right, purple, blue);
     box-shadow: 0 3px 6px rgba(0, 0,0,0.2);
-    padding: 15px;
-
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 header input{
@@ -26,6 +27,7 @@ header input{
     outline: none;
     border: none;
     appearance: none;
+    
 }
 
 header:before{
@@ -41,24 +43,31 @@ header:before{
 .articles article{
     padding: 30px 15px;
     border: 1px solid white;
+    background-color: none;
 }
 .articles article a {
     text-decoration: none;
+    background-color: none;
 }
 
 .articles article h3{
     color: white;
+    background-color: none;
 } 
 .articles article:nth-child(2n){
-    background-color: black;
+    background-color: none;
 }
 .articles article:hover{
     background-image: linear-gradient(to left, purple, blue);
-    
 }
 .articles{
-    width: 500px;
+    width: 100%;
     border: 15px dashed purple;
     margin:auto;
+    background-color: none;
     
+    
+}
+Article h3{
+    background-color: transparent;
 }
